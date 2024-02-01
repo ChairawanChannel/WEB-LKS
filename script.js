@@ -162,8 +162,3 @@ lightbox.option({
   resizeDuration: 200,
   wrapAround: true,
 });
-
-function enableScroll() {
-  document.body.style.overflow = 'auto';
-}
-disableScroll();
