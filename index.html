@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY WEBSITE - MUHAMMAD CHAIRAWAN</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <link
+      rel="shortcut icon"
+      href="img/Jiro Horikoshi icon.jpeg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="home">
+      <div class="jumbotron">
+        <h1>WELCOME TO MY WEBSITE</h1>
+        <p>Muhammad Chairawan</p>
+        <a href="#about-me" onClick="enableScroll()" class="seemoreBtn">See More</a>
+      </div>
+      <nav>
+        <div class="logo">
+          <a href="#home">
+            <img src="img/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#fav-song">Favorite Song</a></li>
+          <li><a href="#myfriends">My Friends</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="content">
+        <article class="card" id="about-me">
+          <h2>About Me</h2>
+          <img class="featured-image" src="img/awan.jpg" alt="About Me" />
+          <p>
+            Halo! Saya <b>Muhammad Chairawan</b>, seorang pelajar Rekayasa
+            Perangkat Lunak (<b>RPL</b>) dengan semangat untuk memahami dan
+            menguasai kompleksitas dunia koding. Berusia 16 tahun, saya sedang
+            mengejar eksplorasi penuh warna di dunia teknologi di kelas 11
+            <a href="https://smkn9medan.sch.id/" target="_blank"
+              >SMK Negeri 9 Medan.</a
+            >
+            Lahir pada 04 Mei 2007 di Medan, saya membawa semangat kreatif dan
+            logika yang kuat ke setiap proyek yang saya tangani. Jurusan
+            <b>RPL</b> bukan sekadar pilihan, melainkan panggung bagi ekspresi
+            penuh potensi dalam menciptakan solusi perangkat lunak yang efisien
+            dan inovatif. Di
+            <a href="https://smkn9medan.sch.id/" target="_blank"
+              >SMK Negeri 9 Medan.</a
+            >, saya merajut keterampilan teknis dengan keinginan untuk selalu
+            menghadirkan solusi yang mendefinisikan standar. Proyek-proyek saya
+            bukan hanya mencerminkan penguasaan bahasa pemrograman, tetapi juga
+            pandangan mendalam tentang bagaimana teknologi dapat merubah dunia.
+            Sebagai ahli <b>RPL</b>, saya memahami bahwa keberhasilan dalam
+            dunia koding bukan hanya tentang membuat program berjalan, tetapi
+            tentang menciptakan fondasi untuk masa depan digital. Saya selalu
+            mencari tantangan dan menyambut peluang untuk mengasah keterampilan,
+            karena saya yakin bahwa inovasi dimulai dari keberanian untuk
+            melangkah lebih maju. Mari bersama-sama menjelajahi potensi tanpa
+            batas dunia perangkat lunak. Saya tidak hanya menawarkan kemampuan
+            teknis, tetapi juga komitmen untuk terus menggali inovasi yang akan
+            membawa kita ke era digital yang lebih cerah.
+          </p>
+        </article>
+        <article class="card" id="fav-song">
+          <h2>My Favorite Song</h2>
+          <p>This is my favorite song</p>
+          <div class="player">
+            <div class="details">
+              <div class="now-playing">PLAYING x OF y</div>
+              <div class="track-art"></div>
+              <div class="track-name">Track Name</div>
+              <div class="track-artist">Track Artist</div>
+            </div>
+            <div class="buttons">
+              <div class="prev-track" onclick="prevTrack()">
+                <i class="fa fa-step-backward fa-2x"></i>
+              </div>
+              <div class="playpause-track" onclick="playpauseTrack()">
+                <i class="fa fa-play-circle fa-5x"></i>
+              </div>
+              <div class="next-track" onclick="nextTrack()">
+                <i class="fa fa-step-forward fa-2x"></i>
+              </div>
+            </div>
+            <div class="slider_container">
+              <div class="current-time">00:00</div>
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="0"
+                class="seek_slider"
+                onchange="seekTo()"
+              />
+              <div class="total-duration">00:00</div>
+            </div>
+            <div class="slider_container">
+              <i class="fa fa-volume-down"></i>
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="99"
+                class="volume_slider"
+                onchange="setVolume()"
+              />
+              <i class="fa fa-volume-up"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="myfriends">
+          <h2>My Friends</h2>
+          <p>Teman-teman yang pernah ada dalam kehidupan saya.</p>
+          <div class="photo-album">
+            <img src="img/FOTO-1.JPG" alt="Friend 1" />
+            <img src="img/FOTO-2.jpeg" alt="Friend 2" />
+            <img src="img/FOTO-3.JPG" alt="Friend 3" />
+            <img src="img/FOTO-4.JPG" alt="Friend 4" />
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="social-icons">
+        <a href="https://youtube.com/@ChairawanChannel" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/nawwaann/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Tambahkan ikon untuk media sosial lainnya sesuai kebutuhan -->
+      </div>
+      <p>Copyright 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

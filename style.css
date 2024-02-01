@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  display: inline;
+}
+
+.logo {
+  margin-right: 1rem;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo img {
+  max-width: 60px;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.logo img:hover {
+  transform: scale(1.04);
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.945);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+nav li {
+  list-style-type: none;
+  transition: transform 0.3s ease;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #181b12;
+  transition: color 0.3s ease;
+}
+
+.seemoreBtn {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #a7b192;
+  padding: 15px;
+  border-radius: 10px;
+  color: #181b12;
+  transition: color 0.3s ease;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.seemoreBtn:hover {
+  color: #a7b192;
+  background-color: #220641da;
+}
+
+nav li:hover {
+  transform: scale(1.01);
+}
+
+nav a:hover {
+  color: #a7b192;
+}
+
+main {
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  width: 100%;
+  display: block;
+}
+footer {
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background-color: #220641da;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #a7b192;
+}
+
+h2,
+h3 {
+  color: #181b12;
+}
+
+#content {
+  flex: 5;
+  text-align: justify;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 246px;
+  text-align: center;
+  color: white;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  size: 50%;
+  max-height: 300px;
+  border-radius: 5%;
+  object-fit: cover;
+  object-position: center;
+}
+#myfriends .photo-album {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#myfriends img {
+  width: 40%;
+  height: 40%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+.profile img {
+  width: 200px;
+}
+.player {
+  width: auto;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  border-radius: 15%;
+}
+
+.now-playing {
+  font-size: 1rem;
+}
+
+.track-name {
+  font-size: 3rem;
+}
+
+.track-artist {
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playpause-track, .prev-track, .next-track {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
+}
+
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1.0;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time, .total-duration {
+  padding: 10px;
+}
+
+i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
+}
+/* Tambahkan ini di bagian atas CSS Anda */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .jumbotron {
+    padding: 100px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 0;
+    margin: 0;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  #myfriends .photo-album {
+    gap: 20px;
+  }
+
+  #myfriends img {
+    width: 100%;
+    height: auto;
+  }
+
+  .profile img {
+    width: 150px;
+  }
+
+  .player {
+    height: 50vh;
+  }
+
+  .details {
+    gap: 10px;
+  }
+
+  .track-art {
+    height: 150px;
+    width: 150px;
+  }
+
+  .seek_slider,
+  .volume_slider {
+    width: 100%;
+  }
+}
