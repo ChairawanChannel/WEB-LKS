@@ -238,8 +238,6 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-
-/* Modify the appearance of the slider */
 .seek_slider, .volume_slider {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -251,7 +249,6 @@ h3 {
   transition: opacity .2s;
 }
 
-/* Modify the appearance of the slider thumb */
 .seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -286,7 +283,6 @@ i.fa-volume-down, i.fa-volume-up {
 i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
   cursor: pointer;
 }
-/* Tambahkan ini di bagian atas CSS Anda */
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
